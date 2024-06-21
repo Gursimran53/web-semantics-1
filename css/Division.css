@@ -16,19 +16,19 @@
 .container .contentrow .content1 {
     width: 292.5px;
     height: 100px;
-    background-color:blueviolet;
+    background-color:rgb(113, 222, 138);
     float: left;
 }
 .container .contentrow .content2 {
     width: 292.5px;
     height: 100px;
-    background-color: brown;
+    background-color: rgb(51, 118, 175);
     float: left;
 }
 .container .contentrow .content3 {
     width: 292.5px;
     height: 100px;
-    background-color:rgb(139, 134, 146);
+    background-color:rgb(113, 222, 138);
     float: left;
 }
 .container .contentrow .content4 {

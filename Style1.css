@@ -1,3 +1,32 @@
+.navbar{
+    position: fixed ;
+    top:20px;
+    left: 10%;
+    background-color: #fff;
+   color:#fff;
+    justify-content: center;
+    padding: 10px 0;
+    width:80%;
+}
+.navbar ul {
+list-style-type: none ;
+}
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration:none;
+    float: left;
+    padding: 14px 20px;
+    text-align: center;
+    color: rgb(78, 46, 46);
+}
+
+.navbar ul li a:hover {
+    background-color: black;
+    color: coral;
+}
 .topheader {
     width: 100%;
     height:auto;
@@ -11,35 +40,37 @@
 
 .container .header {
     width: 1170px;
-    height: 300px;
+    height: 500px;
     background-image: linear-gradient(to bottom, #040404, #2c272e)
 }
 .container .header .textlocation {
     position: absolute;
-    top:70px;
-    left:30%;
+    top:230px;
+    left:25%;
     color:white;
+    font-size:20px;
     font-family:'Times New Roman', Times, serif;
 }
 .container .header .textlocation1 {
     position: absolute;
-    top:115px;
+    top:290px;
     left:30%;
     color:white;
     font-family:serif;
 }
 .container .header .textlocation3 {
     position: absolute;
-    top:50px;
-    left:30%;
+    top:150px;
+    left:23%;
     color:white;
+    font-size:30px;
     font-weight:bold;
     font-style:serif;
 }
 .container .header .circular-div {
     position: absolute;
-    top: 50px;
-    right:13%;
+    top:280px;
+    right:16%;
     width:250px;
     height:200px;
     border-radius: 50%;
@@ -47,6 +78,22 @@
     justify-content: center;
     align-items:center;
     background-image: url(images12/CT.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container .header .circular-div1 {
+    position: absolute;
+    top:150px;
+    right:78%;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images12/images.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,7 +110,7 @@
 .box{
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 15%;
     width: 80px;
     height: 45px;
@@ -74,7 +121,7 @@
 }
 .link {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 15px;
     text-align:center;
@@ -89,7 +136,7 @@
 .box1 {
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 25%;
     width: 80px;
     height: 45px;
@@ -100,7 +147,7 @@
 }
 .link1 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 15px;
     text-align:center;
@@ -115,7 +162,7 @@
 .box2 {
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 35%;
     width: 80px;
     height: 45px;
@@ -126,7 +173,7 @@
 }
 .link2 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 15px;
     text-align:center;
@@ -141,7 +188,7 @@
 .box3 {
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 45%;
     width: 80px;
     height: 45px;
@@ -152,7 +199,7 @@
 }
 .link3 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 15px;
     text-align:center;
@@ -167,7 +214,7 @@
 .box4 {
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 55%;
     width: 80px;
     height: 45px;
@@ -178,7 +225,7 @@
 }
 .link4 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -193,7 +240,7 @@
 .box5{
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 65%;
     width: 80px;
     height: 45px;
@@ -204,7 +251,7 @@
 }
 .link5 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -219,7 +266,7 @@
 .box6 {
     position: absolute;
     border: 2px solid #333;
-    top: 350px;
+    top: 530px;
     left: 75%;
     width: 80px;
     height: 45px;
@@ -230,7 +277,7 @@
 }
 .link6 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -245,7 +292,7 @@
 .box7 {
     position: absolute;
     border: 2px solid #333;
-    top: 450px;
+    top: 630px;
     left: 15%;
     width: 80px;
     height: 45px;
@@ -256,7 +303,7 @@
 }
 .link7 {
     text-decoration: none;
-    color:coral;
+    color:White;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -271,7 +318,7 @@
 .box8 {
     position: absolute;
     border: 2px solid #333;
-    top: 450px;
+    top: 630px;
     left: 25%;
     width: 80px;
     height: 45px;
@@ -282,7 +329,7 @@
 }
 .link8 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -297,7 +344,7 @@
 .box9 {
     position: absolute;
     border: 2px solid #333;
-    top: 450px;
+    top: 630px;
     left: 35%;
     width: 80px;
     height: 45px;
@@ -308,7 +355,7 @@
 }
 .link9 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -323,7 +370,7 @@
 .box10{
     position: absolute;
     border: 2px solid #333;
-    top: 450px;
+    top: 630px;
     left: 45%;
     width: 80px;
     height: 45px;
@@ -334,7 +381,7 @@
 }
 .link10 {
     text-decoration: none;
-    color:coral;
+    color:white;
     font-weight: bold;
     font-size: 13.7px;
     text-align:center;
@@ -353,7 +400,7 @@
 }
 .container .footer .textlocation2 {
     position: absolute;
-    top:1080px;
+    top:1280px;
     left:75%;
     color:white;
     font-weight: bold ;

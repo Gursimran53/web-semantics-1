@@ -1,0 +1,361 @@
+.topheader {
+    width: 100%;
+    height:auto;
+    background-color: black;
+}
+.container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .header {
+    width: 1170px;
+    height: 300px;
+    background-image: linear-gradient(to bottom, #040404, #2c272e)
+}
+.container .header .textlocation {
+    position: absolute;
+    top:70px;
+    left:30%;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+}
+.container .header .textlocation1 {
+    position: absolute;
+    top:115px;
+    left:30%;
+    color:white;
+    font-family:serif;
+}
+.container .header .textlocation3 {
+    position: absolute;
+    top:50px;
+    left:30%;
+    color:white;
+    font-weight:bold;
+    font-style:serif;
+}
+.container .header .circular-div {
+    position: absolute;
+    top: 50px;
+    right:13%;
+    width:250px;
+    height:200px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url(images12/CT.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container .contentrow {
+    width: 1170px;
+    height: 700px;
+    background-color:coral;
+ 
+    
+}
+
+.box{
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 15%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+}
+.link:hover {
+    color:Coral;
+}
+.box:hover {
+    background-color: rgb(174, 221, 186);
+    color:white;
+}
+.box1 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 25%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link1 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+}
+.link1:hover {
+    color:#ea6c50;
+}
+.box1:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box2 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 35%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link2 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+}
+.link2:hover {
+    color:#ea6c50;
+}
+.box2:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box3 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 45%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link3 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+}
+.link3:hover {
+    color:#ea6c50;
+}
+.box3:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box4 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 55%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link4 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link4:hover {
+    color:#ea6c50;
+}
+.box4:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box5{
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 65%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link5 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link5:hover {
+    color:#ea6c50;
+}
+.box5:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box6 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 350px;
+    left: 75%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link6 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link6:hover {
+    color:#ea6c50;
+}
+.box6:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box7 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 450px;
+    left: 15%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link7 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link7:hover {
+    color:#ea6c50;
+}
+.box7:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box8 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 450px;
+    left: 25%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link8 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link8:hover {
+    color:#ea6c50;
+}
+.box8:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box9 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 450px;
+    left: 35%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link9 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link9:hover {
+    color:#ea6c50;
+}
+.box9:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box10{
+    position: absolute;
+    border: 2px solid #333;
+    top: 450px;
+    left: 45%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link10 {
+    text-decoration: none;
+    color:coral;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link10:hover {
+    color:#ea6c50;
+}
+.box10:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.container .footer {
+    width: 1170px;
+    height: 200px;
+    background-image:url(images12/web.jpg);
+}
+.container .footer .textlocation2 {
+    position: absolute;
+    top:1080px;
+    left:75%;
+    color:white;
+    font-weight: bold ;
+    font-family:serif;   
+}

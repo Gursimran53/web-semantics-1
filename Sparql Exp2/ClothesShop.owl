@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#"
+     xml:base="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Clothes-Shop="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop">
+        <rdfs:comment xml:lang="en">This is an ontology about the clothes shop</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer_Transaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer_Transaction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction"/>
+        <rdfs:comment>The customer makes the transaction</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Supplies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Supplies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:comment xml:lang="en">The supplier supplies the product</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#belongs_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category"/>
+        <rdfs:comment xml:lang="en">The product belongs to a specific category</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#buys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#buys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:comment xml:lang="en">The customer buys the product</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <rdfs:comment xml:lang="en">The store employs employer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee_schedule -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee_schedule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The schedule of the employee whether it is morning or evening</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#category_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#category_Id">
+        <rdfs:comment xml:lang="en">Identification number of the category</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Email Id of the Customer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identificaton number about the customer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_phone_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#customer_phone_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">phone number of the customer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#employee_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#employee_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identification number of the Employee</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_brand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_brand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">BRand of the products available</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Colour of the product bought</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identification number of the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#product_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Price of the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#store_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#store_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identification number of the store</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#store_location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#store_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This will give information about the location of the store</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category">
+        <rdfs:comment xml:lang="en">This will give us information about which product belongs to which category</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer">
+        <rdfs:comment xml:lang="en">This will give information about the customer who buy the product from the shop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee">
+        <rdfs:comment xml:lang="en">This will give us information about the employees</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product">
+        <rdfs:comment xml:lang="en">This wil give informatio about the various bproducts present in the clothes shop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store">
+        <rdfs:comment xml:lang="en">This will contains information about the Clothes shop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction">
+        <rdfs:comment xml:lang="en">This will give information about the transaction made by the customer to buy a product from the shop and the transaction made by the shopkeeper to buy the products from the supplier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#supplier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#supplier">
+        <rdfs:comment xml:lang="en">This will give information about the supplier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#ABC_Cloth_supplies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#ABC_Cloth_supplies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#supplier"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Arica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Arica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <Employee_schedule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morning</Employee_schedule>
+        <employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM1002</employee_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Siyarams</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1002B</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RS.2000-4000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Kids_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&apos;s me</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coral</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1003C</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.4000-5000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Kids_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gucci</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lavender</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1003F</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.20,000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Jeena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Jeena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <Employee_schedule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evening</Employee_schedule>
+        <employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM1003</employee_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Kids_wear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Kids_wear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lascoste</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Navy Blue</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1004P</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.8000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rajat_supplies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rajat_supplies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#supplier"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets"/>
+        <Supplies rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rajni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rajni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <Customer_Transaction rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#cash"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks"/>
+        <customer_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rajni@yahoo.com</customer_email>
+        <customer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS999</customer_id>
+        <customer_phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20987</customer_phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Raman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Raman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <Customer_Transaction rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#paytm"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants"/>
+        <customer_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raman@gmail.com</customer_email>
+        <customer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS1000</customer_id>
+        <customer_phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20345</customer_phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Ravi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Ravi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <Employee_schedule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evening</Employee_schedule>
+        <employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM1005</employee_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rohit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Rohit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <Customer_Transaction rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Debit/Credit_Card"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Track-suit"/>
+        <customer_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rohit@gmail.com</customer_email>
+        <customer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS1001</customer_id>
+        <customer_phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23456</customer_phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Sham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Sham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <Customer_Transaction rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#cash"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts"/>
+        <customer_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sham@gmail.com</customer_email>
+        <customer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS1002</customer_id>
+        <customer_phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3456</customer_phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Sheela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Sheela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Customer"/>
+        <Customer_Transaction rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#paytm"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants"/>
+        <buys rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts"/>
+        <customer_email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheela@yahoo.com</customer_email>
+        <customer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS1003</customer_id>
+        <customer_phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5678</customer_phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zara</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pattern</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1005S</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.2000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Kids_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Addidas</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light blue</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1006T</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.5000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Track-suit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Track-suit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Product"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Mens_wear"/>
+        <product_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Addidas</product_brand>
+        <product_color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey</product_color>
+        <product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PD1007W</product_id>
+        <product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rs.3000-9000</product_price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Women_wear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#cash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#cash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#mania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#mania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Employee"/>
+        <Employee_schedule rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morning</Employee_schedule>
+        <employee_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM1004</employee_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#paytm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#paytm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Debit/Credit_Card -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Debit/Credit_Card">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Transaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Urban_Fashion_Store_(Branch_1) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Urban_Fashion_Store_(Branch_1)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Arica"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Jeena"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Ravi"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#mania"/>
+        <store_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST00B1</store_id>
+        <store_location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gill road, opposite bus stand</store_location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Urban_Fashion_store_(Branch_2) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Urban_Fashion_store_(Branch_2)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Store"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Arica"/>
+        <employs rdf:resource="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Ravi"/>
+        <store_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST002B2</store_id>
+        <store_location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model town, near city Mall</store_location>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:3030/#/dataset/Clothes/query -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="icon" href="http://localhost:3030/favicon.ico">
+    <title>Apache Jena Fuseki UI</title>
+    <script type="module" crossorigin="" src="./Sparql queries_files/index-SkN_20H7.js.download"></script>
+    <link rel="stylesheet" crossorigin="" href="./Sparql queries_files/index-hhGzt_hl.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/ExistingDatasets-058WLqtG.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/Menu-5DZE3X_K.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/bootstrap.esm-IhdfOeVH.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/index-bVS_vDGC.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/NewDataset-NkKu9cR5.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/Upload-OGRoD2jr.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/current-dataset-navigation-guards-8UDBMc46.js"><style type="text/css">
+.file-uploads {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+.file-uploads.file-uploads-html4 input,
+.file-uploads.file-uploads-html5 label {
+  /* background fix ie  click */
+  background: #fff;
+  opacity: 0;
+  font-size: 20em;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.file-uploads.file-uploads-html5 input,
+.file-uploads.file-uploads-html4 label {
+  /* background fix ie  click */
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
+}
+</style><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3030/static/Query-O6O0rt8P.js"><link rel="stylesheet" href="./Sparql queries_files/Query-litqqVjZ.css"><style type="text/css"> .grip-resizable{table-layout:fixed;} .grip-resizable > tbody > tr > td, .grip-resizable > tbody > tr > th{overflow:hidden} .grip-padding > tbody > tr > td, .grip-padding > tbody > tr > th{padding-left:0!important; padding-right:0!important;} .grip-container{ height:0px; position:relative;} .grip-handle{margin-left:-5px; position:absolute; z-index:5; } .grip-handle .grip-resizable{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: col-resize;top:0px} .grip-lastgrip{position:absolute; width:1px; } .grip-drag{ border-left:1px dotted black;	} .grip-flex{width:auto!important;} .grip-handle.grip-disabledgrip .grip-resizable{cursor:default; display:none;}</style></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" data-v-app=""><div id="app"><div class="container-fluid"><div class="row"><nav class="navbar navbar-expand-md bg-light"><div class="container-fluid mx-2 mx-md-0"><a href="http://localhost:3030/#/" class="navbar-brand"><img alt="Apache Jena logo" src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27%20standalone=%27no%27?%3e%3c!--%20Licensed%20under%20the%20terms%20of%20http://www.apache.org/licenses/LICENSE-2.0%20--%3e%3c!--%20Created%20with%20Inkscape%20(http://www.inkscape.org/)%20--%3e%3csvg%20xmlns:dc=%27http://purl.org/dc/elements/1.1/%27%20xmlns:cc=%27http://creativecommons.org/ns%23%27%20xmlns:rdf=%27http://www.w3.org/1999/02/22-rdf-syntax-ns%23%27%20xmlns:svg=%27http://www.w3.org/2000/svg%27%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:sodipodi=%27http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%27%20xmlns:inkscape=%27http://www.inkscape.org/namespaces/inkscape%27%20version=%271.1%27%20width=%2790.929314%27%20height=%2789.5625%27%20id=%27svg2%27%20inkscape:version=%270.48.2%20r9819%27%20sodipodi:docname=%27jena-icon.svg%27%3e%3csodipodi:namedview%20pagecolor=%27%23ffffff%27%20bordercolor=%27%23666666%27%20borderopacity=%271%27%20objecttolerance=%2710%27%20gridtolerance=%2710%27%20guidetolerance=%2710%27%20inkscape:pageopacity=%270%27%20inkscape:pageshadow=%272%27%20inkscape:window-width=%271920%27%20inkscape:window-height=%271118%27%20id=%27namedview13%27%20showgrid=%27false%27%20fit-margin-top=%270%27%20fit-margin-left=%270%27%20fit-margin-right=%270%27%20fit-margin-bottom=%270%27%20inkscape:zoom=%271.7940591%27%20inkscape:cx=%2767.179959%27%20inkscape:cy=%27-38.036736%27%20inkscape:window-x=%270%27%20inkscape:window-y=%2730%27%20inkscape:window-maximized=%271%27%20inkscape:current-layer=%27svg2%27%20/%3e%3cdefs%20id=%27defs4%27%3e%3cclipPath%20id=%27clipPath3020%27%3e%3cpath%20d=%27m%200,0%201507,0%200,888.648%20-1507,0%20L%200,0%20z%27%20id=%27path3022%27%20inkscape:connector-curvature=%270%27%20/%3e%3c/clipPath%3e%3c/defs%3e%3cmetadata%20id=%27metadata7%27%3e%3crdf:RDF%3e%3ccc:Work%20rdf:about=%27%27%3e%3cdc:format%3eimage/svg+xml%3c/dc:format%3e%3cdc:type%20rdf:resource=%27http://purl.org/dc/dcmitype/StillImage%27%20/%3e%3cdc:title%20/%3e%3c/cc:Work%3e%3c/rdf:RDF%3e%3c/metadata%3e%3cg%20id=%27layer1%27%20transform=%27translate(-304.86728,-220.21538)%27%3e%3cg%20transform=%27matrix(0.125,0,0,-0.125,319.59883,347.90268)%27%20id=%27g3016%27%3e%3cg%20transform=%27translate(-117.85113,132.85037)%27%20id=%27g3102%27%3e%3cg%20id=%27g3049%27%3e%3cpath%20d=%27m%20246.496,333.113%20c%200,38.629%20-5.566,55.996%20-35.07,72.699%20-28.895,16.333%20-173.0862,68.79%20-195.4533,95.008%20-39.543,46.371%201.1796,108.598%2047.7343,104.625%2024.6836,-2.117%2040.863,-16.386%2055.895,-31.507%2011.964,-12.043%2073.73,-82.422%2092.918,-101.004%2015.21,-14.707%2032.753,-22.657%2054.562,-25.879%2020.793,-3.075%2038.547,1.566%2053.887,11.125%2025.656,16.011%2044.543,45.8%2059.531,76.234%2017,34.516%2044.031,55.356%2075.84,52.816%2053.41,-4.269%2073.262,-56.058%2058.613,-94.82%20-5.898,-15.586%20-31.367,-38.773%20-52.824,-45.871%20-18.277,-6.047%20-90.223,-31.367%20-100.594,-35.555%20-38.98,-15.73%20-47.597,-32.086%20-47.597,-77.847%200,-19.504%2020.519,-73.18%2020.519,-95.524%200,-39.617%20-20.098,-65.465%20-53.109,-65.465%20-32.684,0%20-55.379,25.918%20-55.379,65.434%200,22.98%2020.527,76.035%2020.527,95.531%27%20id=%27path3032%27%20style=%27fill:%23231f20;fill-opacity:1;fill-rule:nonzero;stroke:none%27%20inkscape:connector-curvature=%270%27%20/%3e%3cpath%20d=%27m%20480.93,727.688%20c%200,-38.633%205.57,-56.004%2035.062,-72.688%2028.91,-16.328%20173.102,-68.793%20195.469,-95.016%2039.543,-46.367%20-1.188,-108.593%20-47.746,-104.629%20-24.688,2.122%20-40.863,16.399%20-55.887,31.52%20-11.969,12.031%20-73.73,82.418%20-92.91,100.992%20-15.219,14.711%20-32.77,22.66%20-54.57,25.871%20-20.793,3.086%20-38.551,-1.554%20-53.891,-11.117%20-25.656,-16.016%20-44.543,-45.801%20-59.527,-76.223%20-16.992,-34.527%20-44.028,-55.359%20-75.836,-52.82%20-53.414,4.258%20-73.266,56.051%20-58.614,94.824%205.903,15.578%2031.368,38.762%2052.817,45.86%2018.273,6.043%2090.234,31.359%20100.601,35.55%2038.977,15.747%2047.59,32.098%2047.59,77.856%200,19.496%20-20.519,73.184%20-20.519,95.531%200,39.61%2020.097,65.449%2053.109,65.449%2032.684,0%2055.383,-25.914%2055.383,-65.429%200,-22.985%20-20.531,-76.031%20-20.531,-95.531%27%20id=%27path3076%27%20style=%27fill:%231a80b9;fill-opacity:1;fill-rule:nonzero;stroke:none%27%20inkscape:connector-curvature=%270%27%20/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" style="width: 52px;"> Apache Jena Fuseki </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a href="http://localhost:3030/#/" class="nav-link"><svg class="svg-inline--fa fa-database" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="" fill="currentColor" d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"></path></svg> datasets </a></li><li class="nav-item"><a href="http://localhost:3030/#/manage" class="nav-link"><svg class="svg-inline--fa fa-gears" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gears" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path class="" fill="currentColor" d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg> manage </a></li><li class="nav-item"><a href="http://localhost:3030/#/documentation" class="nav-link"><svg class="svg-inline--fa fa-circle-info" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg> help </a></li></ul><ul class="navbar-nav ms-auto"><div><span>server status</span><a class="d-inline-block" href="http://localhost:3030/#" data-bs-toggle="tooltip" title="Last ping returned OK in 7ms"><svg id="status-icon" class="ms-2"><circle cx="1em" cy="1em" r="1em" stroke="transparent" stroke-width="0" fill="transparent" class="success"></circle></svg></a></div></ul></div></div></nav></div><div class="container-fluid"><div class="row mt-4"><div class="col-12"><h2>/Clothes</h2><div class="card"><nav class="card-header"><ul class="nav nav-tabs card-header-tabs"><li class="nav-item"><a aria-current="page" href="http://localhost:3030/#/dataset/Clothes/query" class="router-link-active active nav-link"><svg class="svg-inline--fa fa-circle-question" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-question" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg><span class="ms-1">query</span></a></li><li class="nav-item"><a href="http://localhost:3030/#/dataset/Clothes/upload" class="nav-link"><svg class="svg-inline--fa fa-upload" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M288 109.3V352c0 17.7-14.3 32-32 32s-32-14.3-32-32V109.3l-73.4 73.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l128-128c12.5-12.5 32.8-12.5 45.3 0l128 128c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L288 109.3zM64 352H192c0 35.3 28.7 64 64 64s64-28.7 64-64H448c35.3 0 64 28.7 64 64v32c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V416c0-35.3 28.7-64 64-64zM432 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg><span class="ms-1">add data</span></a></li><li class="nav-item"><a href="http://localhost:3030/#/dataset/Clothes/edit" class="nav-link"><svg class="svg-inline--fa fa-pen-to-square" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen-to-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"></path></svg><span class="ms-1">edit</span></a></li><li class="nav-item"><a href="http://localhost:3030/#/dataset/Clothes/info" class="nav-link"><svg class="svg-inline--fa fa-gauge-high" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gauge-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg><span class="ms-1">info</span></a></li></ul></nav><div class="card-body"><h3>SPARQL Query</h3><p>To try out some SPARQL queries against the selected dataset, enter your query here.</p><div><div class="row"><div class="col"><fieldset class="form-group"><label tabindex="-1" class="col-form-label pt-0">Example Queries</label><div><span href="#" class="badge text-bg-info p-2 me-2">Selection of triples</span><span href="#" class="badge text-bg-info p-2 me-2">Selection of classes</span></div></fieldset></div><div class="col"><fieldset class="form-group"><label tabindex="-1" class="col-form-label pt-0">Prefixes</label><div><span class="badge text-bg-light p-2 me-2" href="#">rdf</span><span class="badge text-bg-primary p-2 me-2" href="#">rdfs</span><span class="badge text-bg-primary p-2 me-2" href="#">owl</span><span class="badge text-bg-light p-2 me-2" href="#">xsd</span></div></fieldset></div></div><div class="row"><div class="col-sm-12 col-md-4"><fieldset class="form-group" aria-labelledby="sparql-endpoint-label"><div class="form-row"><label tabindex="-1" for="sparql-endpoint" class="col-6 col-form-label" id="sparql-endpoint-label">SPARQL Endpoint</label><div class="col"><input id="sparql-endpoint" type="text" class="form-control"></div></div></fieldset></div><div class="col-sm-12 col-md-4"><fieldset class="form-group" aria-labelledby="content-type-label"><div class="form-row"><label tabindex="-1" for="content-type-select" class="col-6 col-form-label" id="content-type-select-label">Content Type (SELECT)</label><div class="col"><select id="content-type-select" class="form-select" aria-label="Content Type select"><option value="application/sparql-results+json">JSON</option><option value="application/sparql-results+xml">XML</option><option value="text/csv">CSV</option><option value="text/tab-separated-values">TSV</option></select></div></div></fieldset></div><div class="col-sm-12 col-md-4"><fieldset class="form-group" aria-labelledby="content-type-graph-label"><div class="form-row"><label tabindex="-1" for="content-type-graph" class="col-6 col-form-label" id="content-type-graph-label">Content Type (GRAPH)</label><div class="col"><select id="content-type-graph" class="form-select" aria-label="Content Type select"><option value="text/turtle">Turtle</option><option value="application/ld+json">JSON-LD</option><option value="application/n-triples">N-Triples</option><option value="application/rdf+xml">XML</option></select></div></div></fieldset></div></div></div><div><!----><div class="row"><div class="col-sm-12"><div id="yasqe"><div class="yasqe"><div class="CodeMirror cm-s-default CodeMirror-wrap" translate="no" style="clip-path: inset(0px); height: 300px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 89.0667px; left: 295.333px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;" aria-autocomplete="list"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 44px; margin-bottom: -22px; border-right-width: 28px; min-height: 260px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>10</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 250.267px; top: 84px; height: 21px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 33px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">PREFIX</span><span class="cm-ws"> </span><span class="cm-string-2">table:</span><span class="cm-variable-3">&lt;http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span><span class="cm-ws"> </span><span class="cm-atom">?Product</span><span class="cm-ws"> </span><span class="cm-atom">?Id</span><span class="cm-ws"> </span><span class="cm-atom">?cost</span><span class="cm-ws"> </span><span class="cm-atom">?brand</span><span class="cm-ws"> </span><span class="cm-atom">?name</span><span class="cm-ws"> </span><span class="cm-atom">?colour</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 33px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">WHERE</span><span class="cm-ws"> </span><span class="cm-punc">{</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-atom">?Clothes</span><span class="cm-ws"> </span><span class="cm-string-2">table:buys</span><span class="cm-atom">?Product</span><span class="cm-punc">.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-atom">?Product</span><span class="cm-ws"> </span><span class="cm-string-2">table:product_id</span><span class="cm-ws"> </span><span class="cm-atom">?Id</span><span class="cm-punc">.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-atom">?Product</span><span class="cm-ws"> </span><span class="cm-string-2">table:product_price</span><span class="cm-ws"> </span><span class="cm-atom">?cost</span><span class="cm-punc">.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-atom">?Product</span><span class="cm-ws"> </span><span class="cm-string-2">table:product_brand</span><span class="cm-ws"> </span><span class="cm-atom">?brand</span><span class="cm-punc">.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span><span class="cm-atom">?Product</span><span class="cm-ws"> </span><span class="cm-string-2">table:product_color</span><span class="cm-ws"> </span><span class="cm-atom">?colour</span><span class="cm-punc">.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> &nbsp;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punc">}</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -44px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 4px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws"> </span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 28px; width: 1px; border-bottom: 0px solid transparent; top: 260px;"></div><div class="CodeMirror-gutters" style="height: 288px; left: -3.8e-06px;"><div class="CodeMirror-gutter gutterErrorBar"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div><div class="yasqe_buttons"><button class="yasqe_share" title="Share query" aria-label="Share query"><div class="svgImg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"><path d="M36.764 50c0 .308-.07.598-.088.905l32.247 16.12c2.76-2.34 6.293-3.798 10.195-3.798C87.89 63.227 95 70.337 95 79.11 95 87.89 87.89 95 79.118 95c-8.78 0-15.882-7.11-15.882-15.89 0-.317.07-.6.088-.906l-32.247-16.12c-2.77 2.33-6.293 3.79-10.195 3.79C12.11 65.873 5 58.77 5 50c0-8.78 7.11-15.89 15.882-15.89 3.902 0 7.427 1.467 10.195 3.796l32.247-16.12c-.018-.307-.088-.597-.088-.913C63.236 12.11 70.338 5 79.118 5 87.89 5 95 12.11 95 20.873c0 8.78-7.11 15.89-15.882 15.89-3.91 0-7.436-1.467-10.195-3.805L36.676 49.086c.017.308.088.598.088.914z"></path></svg></div></button><button class="yasqe_queryButton query_valid " title="Run query" aria-label="Run query"><div class="svgImg queryIcon"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="81.9" width="72.9" version="1.1" y="0px" x="0px" viewBox="0 0 72.900002 81.900002" aria-hidden="true"><path id="queryIcon" d="m69.6 35.2-60.3-34.3c-2.2-1.2-4.4-1.2-6.4 0s-2.9 3.4-2.9 5.6v68.8c0 2.2 1.2 4.4 2.9 5.6 1 0.5 2.2 1 3.4 1s2.2-0.5 2.9-1l60.3-34.3c2.2-1.2 3.4-3.4 3.4-5.6s-1.1-4.3-3.3-5.8z"></path><path id="loadingIcon" d="m61.184 36.167-48.73-27.719c-1.7779-0.96976-3.5558-0.96976-5.172 0-1.6163 0.96976-2.3436 2.7476-2.3436 4.5255v55.599c0 1.7779 0.96976 3.5558 2.3436 4.5255 0.80813 0.40407 1.7779 0.80813 2.7476 0.80813 0.96975 0 1.7779-0.40406 2.3436-0.80813l48.73-27.719c1.7779-0.96976 2.7476-2.7476 2.7476-4.5255s-0.88894-3.475-2.6668-4.6872z" fill="none"></path></svg></div><div class="svgImg warningIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.399998 66.399998" aria-hidden="true"><g><path d="M33.2 0C14.9 0 0 14.9 0 33.2c0 18.3 14.9 33.2 33.2 33.2 18.3 0 33.2-14.9 33.2-33.2C66.4 14.9 51.5 0 33.2 0zm0 59.4C18.7 59.4 7 47.6 7 33.2 7 18.7 18.8 7 33.2 7c14.4 0 26.2 11.8 26.2 26.2 0 14.4-11.8 26.2-26.2 26.2z"></path><path d="M33.1 45.6c-1.4 0-2.5.5-3.5 1.5-.9 1-1.4 2.2-1.4 3.6 0 1.6.5 2.8 1.5 3.8 1 .9 2.1 1.3 3.4 1.3 1.3 0 2.4-.5 3.4-1.4 1-.9 1.5-2.2 1.5-3.7 0-1.4-.5-2.6-1.4-3.6-.9-1-2.1-1.5-3.5-1.5zM33.3 12.4c-1.5 0-2.8.5-3.7 1.6-.9 1-1.4 2.4-1.4 4.2 0 1.1.1 2.9.2 5.6l.8 13.1c.2 1.8.4 3.2.9 4.1.5 1.2 1.5 1.8 2.9 1.8 1.3 0 2.3-.7 2.9-1.9.5-1 .7-2.3.9-4l1.1-13.4c.1-1.3.2-2.5.2-3.8 0-2.2-.3-3.9-.8-5.1-.5-1-1.6-2.2-4-2.2z"></path></g></svg></div></button></div><div class="notificationContainer"><div class="notification notif_property">Press CTRL - &lt;spacebar&gt; to autocomplete</div></div></div><div class="resizeWrapper"><div class="resizeChip"></div></div></div></div></div><div class="col-sm-12"><div id="yasr"><div class="yasr isSinglePage"><div class="yasr_header"><ul class="yasr_btnGroup"><li><button class="yasr_btn select_table selected" title="Table" type="button" aria-label="Shows Table view"><div class="svgImg plugin_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64v-96h160v96zm0-160H64v-96h160v96zm224 160H288v-96h160v96zm0-160H288v-96h160v96z"></path></svg></div><span>Table</span></button></li><li><button class="yasr_btn select_response" title="Response" type="button" aria-label="Shows Response view"><div class="svgImg plugin_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34A12.82 12.82 0 0 0 12.83 352zm0-256h262.34A12.82 12.82 0 0 0 288 83.17V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34A12.82 12.82 0 0 0 12.83 96zM432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg></div><span>Response</span></button></li></ul><div class="yasr_response_chip">11 results in 0.044 seconds</div><div class="space_element"></div><div id="yasr_plugin_control" class="yasr_plugin_control" aria-controls="resultsId1"><div class="tableControls"><div><label class="switch"><span class="label">Simple view</span><input type="checkbox"></label></div><div><label class="switch"><span class="label">Ellipse</span><input type="checkbox" checked=""></label></div><input class="tableFilter" placeholder="Filter query results" aria-label="Filter query results"><div class="pageSizeWrapper"><span class="pageSizerLabel">Page size: </span><select class="tableSizer"><option value="10">10</option><option value="50">50</option><option value="100">100</option><option value="1000">1000</option><option value="-1">All</option></select></div></div></div><a class="yasr_btn yasr_downloadIcon btn_icon" download="" aria-label="Download Results" tabindex="0" role="button" title="Download result"><div class="svgImg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg></div></a><a class="yasr_btn yasr_external_ref_btn" href="https://triply.cc/docs/yasgui#table" target="_blank" rel="noopener noreferrer" title="View documentation of Table" aria-label="View documentation of Table"><div class="svgImg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg></div></a></div><div class="yasr_fallback_info"></div><div class="yasr_results" id="resultsId1"><div id="DataTables_Table_18_wrapper" class="dataTables_wrapper no-footer"><div class="grip-container" style="width: 1972.13px;"><div class="grip-handle" style="left: 30.0667px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle" style="left: 1184.33px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle" style="left: 1323.82px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle" style="left: 1525.2px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle" style="left: 1660.2px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle" style="left: 1790.53px; height: 32px;"><div class="grip-resizable"></div></div><div class="grip-handle grip-lastgrip" style="left: 1943.82px; height: 32px;"></div></div><table id="DataTables_Table_18" class="dataTable no-footer grip-padding grip-resizable ellipseTable" aria-describedby="DataTables_Table_18_info" style="width: 1943px;"><thead><tr><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 16px;"></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="Product: activate to sort column ascending" style="width: 1118px;">Product</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="Id: activate to sort column ascending" style="width: 113px;">Id</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="cost: activate to sort column ascending" style="width: 174px;">cost</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="brand: activate to sort column ascending" style="width: 109px;">brand</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="name: activate to sort column ascending" style="width: 104px;">name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_18" rowspan="1" colspan="1" aria-label="colour: activate to sort column ascending" style="width: 126px;">colour</th></tr></thead><tbody><tr class="odd"><td><div class="rowNumber">1</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Blazers</a>&gt;</span></div></td><td><div><span class="nonIri">PD1002B</span></div></td><td><div><span class="nonIri">RS.2000-4000</span></div></td><td><div><span class="nonIri">Siyarams</span></div></td><td></td><td><div><span class="nonIri">Brown</span></div></td></tr><tr class="even"><td><div class="rowNumber">2</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants</a>&gt;</span></div></td><td><div><span class="nonIri">PD1004P</span></div></td><td><div><span class="nonIri">Rs.8000</span></div></td><td><div><span class="nonIri">Lascoste</span></div></td><td></td><td><div><span class="nonIri">Navy Blue</span></div></td></tr><tr class="odd"><td><div class="rowNumber">3</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants</a>&gt;</span></div></td><td><div><span class="nonIri">PD1004P</span></div></td><td><div><span class="nonIri">Rs.8000</span></div></td><td><div><span class="nonIri">Lascoste</span></div></td><td></td><td><div><span class="nonIri">Navy Blue</span></div></td></tr><tr class="even"><td><div class="rowNumber">4</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Pants</a>&gt;</span></div></td><td><div><span class="nonIri">PD1004P</span></div></td><td><div><span class="nonIri">Rs.8000</span></div></td><td><div><span class="nonIri">Lascoste</span></div></td><td></td><td><div><span class="nonIri">Navy Blue</span></div></td></tr><tr class="odd"><td><div class="rowNumber">5</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Shirts</a>&gt;</span></div></td><td><div><span class="nonIri">PD1005S</span></div></td><td><div><span class="nonIri">Rs.2000</span></div></td><td><div><span class="nonIri">Zara</span></div></td><td></td><td><div><span class="nonIri">pattern</span></div></td></tr><tr class="even"><td><div class="rowNumber">6</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#T-shirts</a>&gt;</span></div></td><td><div><span class="nonIri">PD1006T</span></div></td><td><div><span class="nonIri">Rs.5000</span></div></td><td><div><span class="nonIri">Addidas</span></div></td><td></td><td><div><span class="nonIri">Light blue</span></div></td></tr><tr class="odd"><td><div class="rowNumber">7</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Cord-sets</a>&gt;</span></div></td><td><div><span class="nonIri">PD1003C</span></div></td><td><div><span class="nonIri">Rs.4000-5000</span></div></td><td><div><span class="nonIri">It's me</span></div></td><td></td><td><div><span class="nonIri">coral</span></div></td></tr><tr class="even"><td><div class="rowNumber">8</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks</a>&gt;</span></div></td><td><div><span class="nonIri">PD1003F</span></div></td><td><div><span class="nonIri">Rs.20,000</span></div></td><td><div><span class="nonIri">Gucci</span></div></td><td></td><td><div><span class="nonIri">Lavender</span></div></td></tr><tr class="odd"><td><div class="rowNumber">9</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks</a>&gt;</span></div></td><td><div><span class="nonIri">PD1003F</span></div></td><td><div><span class="nonIri">Rs.20,000</span></div></td><td><div><span class="nonIri">Gucci</span></div></td><td></td><td><div><span class="nonIri">Lavender</span></div></td></tr><tr class="even"><td><div class="rowNumber">10</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Frocks</a>&gt;</span></div></td><td><div><span class="nonIri">PD1003F</span></div></td><td><div><span class="nonIri">Rs.20,000</span></div></td><td><div><span class="nonIri">Gucci</span></div></td><td></td><td><div><span class="nonIri">Lavender</span></div></td></tr><tr class="odd"><td><div class="rowNumber">11</div></td><td><div><span>&lt;<a href="http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Track-suit" class="iri" target="_blank" rel="noopener noreferrer">http://www.semanticweb.org/amarjeet/ontologies/2024/6/Clothes-Shop#Track-suit</a>&gt;</span></div></td><td><div><span class="nonIri">PD1007W</span></div></td><td><div><span class="nonIri">Rs.3000-9000</span></div></td><td><div><span class="nonIri">Addidas</span></div></td><td></td><td><div><span class="nonIri">Grey</span></div></td></tr></tbody></table><div class="dataTables_info" id="DataTables_Table_18_info" role="status" aria-live="polite">Showing 1 to 11 of 11 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_18_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_18" aria-disabled="true" role="link" data-dt-idx="previous" tabindex="-1" id="DataTables_Table_18_previous">&lt;</a><span><a class="paginate_button current" aria-controls="DataTables_Table_18" role="link" aria-current="page" data-dt-idx="0" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="DataTables_Table_18" aria-disabled="true" role="link" data-dt-idx="next" tabindex="-1" id="DataTables_Table_18_next">&gt;</a></div><div style="width: 16px;"></div><div style="width: 16px;"></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="toast-container" aria-live="polite" aria-atomic="true"><div class="position-fixed top-0 end-0 px-2" style="z-index: 11;"><div></div></div></div></div></div>
+    <!-- built files will be auto injected -->
+  
+
+</body></html>

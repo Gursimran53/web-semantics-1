@@ -393,6 +393,58 @@ list-style-type: none ;
     background-color: rgb(136, 237, 163);
     color:white;
 }
+.box11 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 630px;
+    left: 55%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link11 {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link11:hover {
+    color:#ea6c50;
+}
+.box11:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
+.box12 {
+    position: absolute;
+    border: 2px solid #333;
+    top: 630px;
+    left: 55%;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    background-color: #433c3c;
+    color: white;
+    margin: 50px auto;
+}
+.link12 {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 13.7px;
+    text-align:center;
+}
+.link12:hover {
+    color:#ea6c50;
+}
+.box12:hover {
+    background-color: rgb(136, 237, 163);
+    color:white;
+}
 .container .footer {
     width: 1170px;
     height: 200px;

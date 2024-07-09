@@ -1,36 +1,9 @@
-.navbar{
-    position: fixed ;
-    top:20px;
-    left: 10%;
-    background-color: #fff;
-   color:#fff;
-    justify-content: center;
-    padding: 10px 0;
-    width:80%;
-}
-.navbar ul {
-list-style-type: none ;
-}
-.navbar ul li {
-    list-style-type: none;
-}
 
-.navbar ul li a {
-    text-decoration:none;
-    float: left;
-    padding: 14px 20px;
-    text-align: center;
-    color: rgb(78, 46, 46);
-}
-
-.navbar ul li a:hover {
-    background-color: black;
-    color: coral;
-}
 .topheader {
     width: 100%;
     height:auto;
     background-color: black;
+    background-image: url(images12/win.jpg);
 }
 .container {
     width: 1170px;
@@ -40,12 +13,12 @@ list-style-type: none ;
 
 .container .header {
     width: 1170px;
-    height: 500px;
-    background-image: linear-gradient(to bottom, #040404, #2c272e)
+    height: 300px;
+    background-image: linear-gradient(to bottom, #8897db, #9c99cb)
 }
 .container .header .textlocation {
     position: absolute;
-    top:230px;
+    top:110px;
     left:25%;
     color:white;
     font-size:20px;
@@ -53,40 +26,25 @@ list-style-type: none ;
 }
 .container .header .textlocation1 {
     position: absolute;
-    top:290px;
+    top:160px;
     left:30%;
     color:white;
     font-family:serif;
 }
 .container .header .textlocation3 {
     position: absolute;
-    top:150px;
+    top:50px;
     left:23%;
     color:white;
     font-size:30px;
     font-weight:bold;
     font-style:serif;
 }
-.container .header .circular-div {
-    position: absolute;
-    top:280px;
-    right:16%;
-    width:250px;
-    height:200px;
-    border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    background-image: url(images12/CT.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
 .container .header .circular-div1 {
     position: absolute;
-    top:150px;
-    right:78%;
+    top:80px;
+    right:79%;
     width:100px;
     height:100px;
     border-radius: 50%;
@@ -101,16 +59,16 @@ list-style-type: none ;
 }
 .container .contentrow {
     width: 1170px;
-    height: 700px;
-    background-color:coral;
- 
+    height: 500px;
+    background-color:rgb(233, 199, 227);
+    
     
 }
 
 .box{
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 15%;
     width: 80px;
     height: 45px;
@@ -123,7 +81,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     text-align:center;
 }
 .link:hover {
@@ -136,7 +94,7 @@ list-style-type: none ;
 .box1 {
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 25%;
     width: 80px;
     height: 45px;
@@ -144,12 +102,13 @@ list-style-type: none ;
     background-color: #433c3c;
     color: white;
     margin: 50px auto;
+    
 }
 .link1 {
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     text-align:center;
 }
 .link1:hover {
@@ -162,7 +121,7 @@ list-style-type: none ;
 .box2 {
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 35%;
     width: 80px;
     height: 45px;
@@ -175,7 +134,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     text-align:center;
 }
 .link2:hover {
@@ -188,7 +147,7 @@ list-style-type: none ;
 .box3 {
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 45%;
     width: 80px;
     height: 45px;
@@ -201,7 +160,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
     text-align:center;
 }
 .link3:hover {
@@ -214,7 +173,7 @@ list-style-type: none ;
 .box4 {
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 55%;
     width: 80px;
     height: 45px;
@@ -227,7 +186,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link4:hover {
@@ -240,7 +199,7 @@ list-style-type: none ;
 .box5{
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 65%;
     width: 80px;
     height: 45px;
@@ -253,7 +212,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link5:hover {
@@ -266,7 +225,7 @@ list-style-type: none ;
 .box6 {
     position: absolute;
     border: 2px solid #333;
-    top: 530px;
+    top: 330px;
     left: 75%;
     width: 80px;
     height: 45px;
@@ -279,7 +238,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link6:hover {
@@ -292,7 +251,7 @@ list-style-type: none ;
 .box7 {
     position: absolute;
     border: 2px solid #333;
-    top: 630px;
+    top: 430px;
     left: 15%;
     width: 80px;
     height: 45px;
@@ -305,7 +264,7 @@ list-style-type: none ;
     text-decoration: none;
     color:White;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link7:hover {
@@ -318,7 +277,7 @@ list-style-type: none ;
 .box8 {
     position: absolute;
     border: 2px solid #333;
-    top: 630px;
+    top: 430px;
     left: 25%;
     width: 80px;
     height: 45px;
@@ -331,7 +290,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link8:hover {
@@ -344,7 +303,7 @@ list-style-type: none ;
 .box9 {
     position: absolute;
     border: 2px solid #333;
-    top: 630px;
+    top: 430px;
     left: 35%;
     width: 80px;
     height: 45px;
@@ -357,7 +316,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link9:hover {
@@ -370,7 +329,7 @@ list-style-type: none ;
 .box10{
     position: absolute;
     border: 2px solid #333;
-    top: 630px;
+    top: 430px;
     left: 45%;
     width: 80px;
     height: 45px;
@@ -383,7 +342,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link10:hover {
@@ -396,7 +355,7 @@ list-style-type: none ;
 .box11 {
     position: absolute;
     border: 2px solid #333;
-    top: 630px;
+    top: 430px;
     left: 55%;
     width: 80px;
     height: 45px;
@@ -409,7 +368,7 @@ list-style-type: none ;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    font-size: 13.7px;
+    font-size: 25px;
     text-align:center;
 }
 .link11:hover {
@@ -419,68 +378,18 @@ list-style-type: none ;
     background-color: rgb(136, 237, 163);
     color:white;
 }
-.box12 {
-    position: absolute;
-    border: 2px solid #333;
-    top: 630px;
-    left: 55%;
-    width: 80px;
-    height: 45px;
-    text-align: center;
-    background-color: #433c3c;
-    color: white;
-    margin: 50px auto;
-}
-.link12 {
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
-    font-size: 13.7px;
-    text-align:center;
-}
-.link12:hover {
-    color:#ea6c50;
-}
-.box12:hover {
-    background-color: rgb(136, 237, 163);
-    color:white;
-}
-.box13 {
-    position: absolute;
-    border: 2px solid #333;
-    top: 630px;
-    left: 55%;
-    width: 80px;
-    height: 45px;
-    text-align: center;
-    background-color: #433c3c;
-    color: white;
-    margin: 50px auto;
-}
-.link13 {
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
-    font-size: 13.7px;
-    text-align:center;
-}
-.link13:hover {
-    color:#ea6c50;
-}
-.box13:hover {
-    background-color: rgb(136, 237, 163);
-    color:white;
-}
+
 .container .footer {
     width: 1170px;
     height: 200px;
-    background-image:url(images12/web.jpg);
+    background-image: linear-gradient(to bottom, #8897db, #9c99cb)
+
 }
 .container .footer .textlocation2 {
     position: absolute;
-    top:1280px;
+    top:900px;
     left:75%;
-    color:white;
+    color:rgb(5, 5, 5);
     font-weight: bold ;
     font-family:serif;   
 }

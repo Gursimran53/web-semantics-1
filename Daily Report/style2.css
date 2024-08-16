@@ -433,8 +433,8 @@
 .box14 {
     position: absolute;
     border: 2px solid #333;
-    top: 430px;
-    left: 55%;
+    top: 530px;
+    left: 15%;
     width: 80px;
     height: 45px;
     text-align: center;
@@ -460,7 +460,7 @@
     position: absolute;
     border: 2px solid #333;
     top: 530px;
-    left: 15%;
+    left: 25%;
     width: 80px;
     height: 45px;
     text-align: center;
@@ -486,7 +486,7 @@
     position: absolute;
     border: 2px solid #333;
     top: 530px;
-    left: 25%;
+    left: 35%;
     width: 80px;
     height: 45px;
     text-align: center;
@@ -512,7 +512,7 @@
     position: absolute;
     border: 2px solid #333;
     top: 530px;
-    left: 35%;
+    left: 45%;
     width: 80px;
     height: 45px;
     text-align: center;
@@ -538,7 +538,7 @@
     position: absolute;
     border: 2px solid #333;
     top: 530px;
-    left: 45%;
+    left: 55%;
     width: 80px;
     height: 45px;
     text-align: center;
@@ -564,7 +564,7 @@
     position: absolute;
     border: 2px solid #333;
     top: 530px;
-    left: 55%;
+    left: 65%;
     width: 80px;
     height: 45px;
     text-align: center;
